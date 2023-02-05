@@ -15,14 +15,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/schimmelpilz', [OrteController::class, 'schimmelpilz'], function () {
-});
+Route::get('/schimmelpilz', [OrteController::class, 'schimmelpilz']);
+Route::get('/', [OrteController::class, 'index']);
 
-Route::get('/', [OrteController::class, 'index'], function () {
-});
-
-Route::get('/gewerbeimmobilien', [OrteController::class, 'gewerbeimmobilien'], function () {
-});
+Route::get('/gewerbeimmobilien', [OrteController::class, 'gewerbeimmobilien']);
 
 Route::get('/grundstuecke-und-rechte', [OrteController::class, 'grundstuecke'], function () {
 });
