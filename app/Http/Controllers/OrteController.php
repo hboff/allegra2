@@ -12,13 +12,14 @@ class OrteController extends Controller
    //         'ortsname'=> $ort,
    //         ]);    }          
     
-    public function index() {
-        $status='de';
-        return view ('index', compact('status'));
-    }
+
     public function ertragswertverfahren() {
         $status='de';
         return view ('show.ertragswertverfahren', compact('status'));
+    }
+        public function index() {
+        $status='de';
+        return view ('index', compact('status'));
     }
     public function sachwertverfahren() {
         $status='de';
