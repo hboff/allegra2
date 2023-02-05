@@ -17,32 +17,15 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/schimmelpilz', [OrteController::class, 'schimmelpilz']);
 Route::get('/', [OrteController::class, 'index']);
-
 Route::get('/gewerbeimmobilien', [OrteController::class, 'gewerbeimmobilien']);
-
-Route::get('/grundstuecke-und-rechte', [OrteController::class, 'grundstuecke'], function () {
-});
-
-Route::get('/landwirtschaftliche-immobilien', [OrteController::class, 'landwirtschaftliche'], function () {
-});
-
-Route::get('/sonderimmobilien', [OrteController::class, 'sonderimmobilien'], function () {
-});
-
-Route::get('/wohnimmobilien', [OrteController::class, 'wohnimmobilien'], function () {
-});
-Route::get('/verkehrswertverfahren', [OrteController::class, 'verkehrswertverfahren'], function () {
-});
-Route::get('/sachwertverfahren', [OrteController::class, 'sachwertverfahren'], function () {
-});
-
-Route::get('/ertragswertverfahren', [OrteController::class, 'ertragswertverfahren'], function () {
-});
-
-Route::get('/ueber-uns', [OrteController::class, 'ueberuns'], function () {
-});
-Route::get('/impressum', [OrteController::class, 'impressum'], function () {
-});
-Route::get('/datenschutzerklaerung', [OrteController::class, 'datenschutzerklaerung'], function () {
-});
+Route::get('/grundstuecke-und-rechte', [OrteController::class, 'grundstuecke']);
+Route::get('/landwirtschaftliche-immobilien', [OrteController::class, 'landwirtschaftliche']);
+Route::get('/sonderimmobilien', [OrteController::class, 'sonderimmobilien']);
+Route::get('/wohnimmobilien', [OrteController::class, 'wohnimmobilien']);
+Route::get('/verkehrswertverfahren', [OrteController::class, 'verkehrswertverfahren']);
+Route::get('/sachwertverfahren', [OrteController::class, 'sachwertverfahren']);
+Route::get('/ertragswertverfahren', [OrteController::class, 'ertragswertverfahren']);
+Route::get('/ueber-uns', [OrteController::class, 'ueberuns']);
+Route::get('/impressum', [OrteController::class, 'impressum']);
+Route::get('/datenschutzerklaerung', [OrteController::class, 'datenschutzerklaerung']);
 
